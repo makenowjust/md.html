@@ -21,7 +21,7 @@ cat - readme.md <<HTML |
 <!-- vim: set ft=markdown -->
 
 HTML
-  sed -Ee 's/src="[^"]*"/src=".\/main.js"/' \
+  sed -Ee '1s/src="[^"]*"/src=".\/main.js"/' \
        -e 's/^.*<!-- MARKER -->$/:sunglasses: **"View Page Source" please!! You will see suprising result.**/' > docs/index.html
 ```
 
