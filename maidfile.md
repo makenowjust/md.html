@@ -18,7 +18,7 @@ set -ex
 webpack --config webpack.config.js --env.production
 cat - readme.md <<HTML |
 <!doctype html><meta charset="utf-8"><script src="./main.js"></script><noscript>
-<!-- vim: set ft=markdown -->
+<!-- vim: set ft=markdown: -->
 
 HTML
   sed -Ee '1s/src="[^"]*"/src=".\/main.js"/' \

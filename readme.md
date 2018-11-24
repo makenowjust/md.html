@@ -10,7 +10,7 @@ Put the following two magical lines into top of HTML file, then you can write Ma
 
 ```markdown
 <!doctype html><meta charset="utf-8"><script src="https://makenowjust.github.io/md.html/main.js"></script><noscript>
-<!-- vim: set ft=markdown -->
+<!-- vim: set ft=markdown: -->
 
 # Hello `md.html` World!
 ```
