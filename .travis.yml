@@ -1,0 +1,22 @@
+language: node_js
+node_js:
+  - '11'
+
+script:
+  - yarn test
+  - yarn lint
+
+before_deploy:
+  - yarn build
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  keep-history: true
+  target-branch: gh-pages
+  github-token: '$GITHUB_TOKEN'
+  local-dir: docs
+  name: TSUYUSATO Kitsune (bot)
+  email: make.just.on@gmail.com
+  on:
+    branch: master
