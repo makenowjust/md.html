@@ -61,18 +61,27 @@ document.addEventListener('DOMContentLoaded', async () => {
     'padding: 0.5em;',
   );
 
-  // Insert converted Markdown into the document.
+  // Insert `<meta name="viewport">` for mobile devies into the document head.
+  const viewport = document.createElement('meta');
+  viewport.name = 'viewport';
+  viewport.content = 'width=device-width,initial-scale=1';
+  document.head.appendChild(viewport);
+
+  // Create wrapper element of converted Markdown.
   const container = document.createElement('div');
   container.classList.add('markdown-body');
   container.innerHTML = result.contents;
-  document.body.appendChild(container);
 
+  // Create footer when frontmatter does not provide `footer` property or `footer` is `true`.
   if (data.footer === undefined || data.footer === true) {
     const footer = document.createElement('footer');
     footer.classList.add('md-html-footer');
     footer.innerHTML = `Powered by <a target="_blank" rel="nofollow noopener noreferrer" href="https://github.com/MakeNowJust/md.html/">📝 md.html</a>`;
     container.appendChild(footer);
   }
+
+  // Insert wrapper element into the document.
+  document.body.appendChild(container);
 
   // Set `document.title` when frontmatter has `title` property.
   if (data.title !== undefined) {
