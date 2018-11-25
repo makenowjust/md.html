@@ -14,7 +14,7 @@ deploy:
   skip-cleanup: true
   keep-history: true
   target-branch: gh-pages
-  github-token: '$GITHUB_TOKEN'
+  github-token: $GITHUB_TOKEN
   local-dir: docs
   name: TSUYUSATO Kitsune (bot)
   email: make.just.on@gmail.com
