@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Render block.html 1`] = `
-"<div class=\\"markdown-body\\"><h1 id=\\"block\\"><a class=\\"anchor\\" aria-hidden=\\"\\" href=\\"#block\\"><svg class=\\"octicon octicon-link\\" viewBox=\\"0 0 16 16\\" version=\\"1.1\\" height=\\"16\\" width=\\"16\\" aria-hidden=\\"aria-hidden\\"><path fill-rule=\\"evenodd\\" d=\\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\\"></path></svg></a>block</h1>
+"<div class=\\"markdown-body\\"><h1 id=\\"-mdhtml-⟫-examples-⟫-block\\"><a class=\\"anchor\\" aria-hidden=\\"\\" href=\\"#-mdhtml-⟫-examples-⟫-block\\"><svg class=\\"octicon octicon-link\\" viewBox=\\"0 0 16 16\\" version=\\"1.1\\" height=\\"16\\" width=\\"16\\" aria-hidden=\\"aria-hidden\\"><path fill-rule=\\"evenodd\\" d=\\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\\"></path></svg></a><a href=\\"../index.html\\">📝 md.html</a> ⟫ <a href=\\"./index.html\\">examples</a> ⟫ block</h1>
 <blockquote>
 <p>block quote</p>
 </blockquote>
@@ -53,7 +53,7 @@ e = &amp;\\\\ e_1 \\\\cdot e_2 &amp; (\\\\text{concatination}) \\\\\\\\
 `;
 
 exports[`Render index.html 1`] = `
-"<div class=\\"markdown-body\\"><h1 id=\\"-mdhtml\\"><a class=\\"anchor\\" aria-hidden=\\"\\" href=\\"#-mdhtml\\"><svg class=\\"octicon octicon-link\\" viewBox=\\"0 0 16 16\\" version=\\"1.1\\" height=\\"16\\" width=\\"16\\" aria-hidden=\\"aria-hidden\\"><path fill-rule=\\"evenodd\\" d=\\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\\"></path></svg></a>📝 md.html</h1>
+"<div class=\\"markdown-body\\"><h1 id=\\"-mdhtml-⟫-examples\\"><a class=\\"anchor\\" aria-hidden=\\"\\" href=\\"#-mdhtml-⟫-examples\\"><svg class=\\"octicon octicon-link\\" viewBox=\\"0 0 16 16\\" version=\\"1.1\\" height=\\"16\\" width=\\"16\\" aria-hidden=\\"aria-hidden\\"><path fill-rule=\\"evenodd\\" d=\\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\\"></path></svg></a><a href=\\"../index.html\\">📝 md.html</a> ⟫ examples</h1>
 <ul>
 <li><a href=\\"./inline.html\\">inline</a></li>
 <li><a href=\\"./block.html\\">block</a></li>
@@ -63,7 +63,7 @@ exports[`Render index.html 1`] = `
 `;
 
 exports[`Render inline.html 1`] = `
-"<div class=\\"markdown-body\\"><h1 id=\\"inline\\"><a class=\\"anchor\\" aria-hidden=\\"\\" href=\\"#inline\\"><svg class=\\"octicon octicon-link\\" viewBox=\\"0 0 16 16\\" version=\\"1.1\\" height=\\"16\\" width=\\"16\\" aria-hidden=\\"aria-hidden\\"><path fill-rule=\\"evenodd\\" d=\\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\\"></path></svg></a>inline</h1>
+"<div class=\\"markdown-body\\"><h1 id=\\"-mdhtml-⟫-examples-⟫-block\\"><a class=\\"anchor\\" aria-hidden=\\"\\" href=\\"#-mdhtml-⟫-examples-⟫-block\\"><svg class=\\"octicon octicon-link\\" viewBox=\\"0 0 16 16\\" version=\\"1.1\\" height=\\"16\\" width=\\"16\\" aria-hidden=\\"aria-hidden\\"><path fill-rule=\\"evenodd\\" d=\\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\\"></path></svg></a><a href=\\"../index.html\\">📝 md.html</a> ⟫ <a href=\\"./index.html\\">examples</a> ⟫ block</h1>
 <p>plain text<br>
 break</p>
 <p><strong><em>bold italic</em></strong></p>
