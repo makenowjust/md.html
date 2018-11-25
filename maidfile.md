@@ -16,13 +16,21 @@ Build project.
 ```bash
 set -ex
 webpack --config webpack.config.js --env.production
+
+# Build `docs/index.html`.
 cat - readme.md <<HTML |
 <!doctype html><meta charset="utf-8"><script src="./main.js"></script><noscript>
 <!-- vim: set ft=markdown: -->
 
 HTML
   sed -Ee '1s/src="[^"]*"/src=".\/main.js"/' \
-       -e 's/^.*<!-- MARKER -->$/:sunglasses: **"View Page Source" please!! You will see suprising result.**/' > docs/index.html
+       -e 's/^.*<!-- MARKER -->$/:sunglasses: **"[View Page Source][raw]" please!! You will see suprising result.**/' > docs/index.html
+
+# Build `docs/examples`.
+mkdir -p docs/examples
+ls examples | while read filename; do
+  sed -E '1s/src="[^"]*"/src="..\/main.js"/' examples/$filename > docs/examples/$filename
+done
 ```
 
 ## test

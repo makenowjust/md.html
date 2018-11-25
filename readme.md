@@ -28,6 +28,8 @@ See [md.html demo](https://makenowjust.github.io/md.html/)!<!-- MARKER -->
 - Syntax highlighting
 - Set title via frontmatter `title` property.
 
+**See [examples](https://makenowjust.github.io/md.html/examples/)**!
+
 ## Special Thanks
 
 This project is built with many other packages.
@@ -63,3 +65,4 @@ MIT (c) 2018 TSUYUSATO "[MakeNowJust][]" Kitsune
 [maid]: https://github.com/egoist/maid
 [makenowjust]: https://github.com/MakeNowJust/
 [prettier]: https://prettier.io/
+[raw]: https://raw.githubusercontent.com/MakeNowJust/md.html/gh-pages/index.html
