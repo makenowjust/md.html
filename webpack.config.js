@@ -39,10 +39,6 @@ module.exports = (env = {}) => {
           test: /\.s?css$/,
           use: ['style-loader', 'css-loader'],
         },
-        {
-          test: /\.(?:woff2?|ttf)/,
-          use: ['url-loader'],
-        },
       ],
     },
     plugins: [

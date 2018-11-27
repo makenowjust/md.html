@@ -20,7 +20,6 @@ import linkIcon from './icons/link';
 // Styles:
 import 'github-markdown-css';
 import 'octicons/index.scss';
-import 'katex/dist/katex.min.css';
 import 'highlight.js/styles/github.css';
 import './main.css';
 

@@ -46,7 +46,6 @@
     "prettier-package-json": "^2.0.1",
     "puppeteer": "^1.10.0",
     "style-loader": "^0.23.1",
-    "url-loader": "^1.1.2",
     "webpack": "^4.26.0",
     "webpack-bundle-analyzer": "^3.0.3",
     "webpack-cli": "^3.1.2",
