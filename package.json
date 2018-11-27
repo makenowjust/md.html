@@ -7,6 +7,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "analyze": "maid analyze",
     "build": "maid build",
     "dev": "maid dev",
     "format": "maid lint --fix",

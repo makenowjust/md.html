@@ -33,6 +33,16 @@ ls examples | while read filename; do
 done
 ```
 
+## analyze
+
+Ananlyze bundled JavaScript.
+
+```bash
+set -ex
+webpack --config webpack.config.js --env.production --profile --json > docs/stats.json
+webpack-bundle-analyzer docs/stats.json
+```
+
 ## test
 
 Run test.
