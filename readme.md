@@ -1,7 +1,3 @@
----
-title: md.html
----
-
 # :memo: md.html
 
 > Markdown inside HTML
