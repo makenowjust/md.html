@@ -41,6 +41,11 @@ module.exports = (env = {}) => {
         },
       ],
     },
+    resolve: {
+      alias: {
+        lowlight$: path.join(__dirname, 'src/lowlight.js'),
+      },
+    },
     plugins: [
       new LicenseWebpackPlugin({
         stats: {
