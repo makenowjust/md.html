@@ -24,7 +24,7 @@ See [md.html demo](https://makenowjust.github.io/md.html/)!<!-- MARKER -->
 - Syntax highlighting
 - Set title via frontmatter `title` property.
 
-**See [examples](./examples/index.html)**!
+**See [examples](examples/)**!
 
 ## Special Thanks
 
