@@ -42,6 +42,7 @@ Ananlyze bundled JavaScript.
 
 ```bash
 set -ex
+mkdir -p docs
 webpack --config webpack.config.js --env.production --profile --json > docs/stats.json
 webpack-bundle-analyzer docs/stats.json
 ```
