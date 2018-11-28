@@ -75,7 +75,7 @@ break</p>
 <p>😄</p>
 <p><a href=\\"./index.html\\">link</a></p>
 <p><a href=\\"https://google.com/\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\">external link</a></p>
-<p><img src=\\"https://picsum.photos/300/200\\" alt=\\"image\\"></p>
+<p><img src=\\"https://picsum.photos/1000/600\\" alt=\\"image\\"></p>
 <hr>
 <p>😎 \\"<a href=\\"https://raw.githubusercontent.com/MakeNowJust/md.html/gh-pages/examples/inline.html\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\">View Page Source</a>\\"</p></div>"
 `;
