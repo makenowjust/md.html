@@ -26,13 +26,13 @@ title: md.html
 ---
 
 HTML
-  sed -Ee '1s/src="[^"]*"/src=".\/main.js"/' \
+  sed -Ee '1s/src="[^"]*"/src="main.js"/' \
        -e 's/^.*<!-- MARKER -->$/:sunglasses: **"[View Page Source][raw]" please!! You will see suprising result.**/' > docs/index.html
 
 # Build `docs/examples`.
-mkdir -p docs/examples
-ls examples | while read filename; do
-  sed -E '1s/src="[^"]*"/src="..\/main.js"/' examples/$filename > docs/examples/$filename
+(cd examples && find . -type f) | while read filename; do
+  mkdir -p docs/examples/$(dirname $filename)
+  sed -E '1s/src="([^"]*)main.js"/src="\1..\/main.js"/' examples/$filename > docs/examples/$filename
 done
 ```
 

@@ -1,6 +1,9 @@
 const path = require('path');
 
-const {LicenseWebpackPlugin} = require('license-webpack-plugin');
+const webpack = require('webpack');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = (env = {}) => {
   return {
@@ -30,6 +33,7 @@ module.exports = (env = {}) => {
                     },
                   ],
                 ],
+                plugins: ['@babel/plugin-syntax-dynamic-import'],
               },
             },
           ],
@@ -37,7 +41,21 @@ module.exports = (env = {}) => {
         {
           // It's a bit hack: `octicon/index.scss` does not include SCSS syntax, so it can pass through css-loader.
           test: /\.s?css$/,
-          use: ['style-loader', 'css-loader'],
+          use: [env.production ? MiniCssExtractPlugin.loader : 'style-loader', 'css-loader'],
+        },
+        {
+          test: /\.(?:ttf|woff2?)$/,
+          use: [
+            env.production
+              ? {
+                  loader: 'file-loader',
+                  options: {
+                    name: '[name].[ext]',
+                    outputPath: 'fonts',
+                  },
+                }
+              : 'url-loader',
+          ],
         },
       ],
     },
@@ -46,12 +64,23 @@ module.exports = (env = {}) => {
         lowlight$: path.join(__dirname, 'src/lowlight.js'),
       },
     },
-    plugins: [
-      new LicenseWebpackPlugin({
-        stats: {
-          warnings: false,
-          error: true,
+    optimization: {
+      splitChunks: {
+        cacheGroups: {
+          styles: {
+            name: 'main',
+            test: /\.css$/,
+            chunks: 'all',
+            enforce: true,
+          },
         },
+      },
+      minimizer: [new TerserPlugin({sourceMap: true}), new OptimizeCSSAssetsPlugin()],
+    },
+    plugins: [
+      ...(env.production ? [new MiniCssExtractPlugin({filename: '[name].css'})] : []),
+      new webpack.DefinePlugin({
+        __DEV__: JSON.stringify(!env.production),
       }),
     ],
     devServer: {

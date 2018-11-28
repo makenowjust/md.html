@@ -1,4 +1,7 @@
-@import url(https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css);
+@import '~github-markdown-css';
+@import '~katex/dist/katex.min.css';
+@import '~octicons/index.scss';
+@import '~highlight.js/styles/github.css';
 
 html,
 body {

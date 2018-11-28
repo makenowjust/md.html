@@ -18,11 +18,9 @@ import html from 'rehype-stringify';
 import linkIcon from './icons/link';
 
 // Styles:
-import 'github-markdown-css';
-import 'octicons/index.scss';
-import 'highlight.js/styles/github.css';
 import './main.css';
 
+// Build Markdown-to-HTML compiler.
 const compiler = unified()
   .use(markdown)
   .use(breaks)
@@ -35,6 +33,32 @@ const compiler = unified()
   .use(highlight, {ignoreMissing: true, subset: false})
   .use(katex)
   .use(html);
+
+// Load `main.css` manually.
+// On production environment, `main.css` is extracted by `mini-css-extract-plugin`,
+// however this plugin doesn't insert DOM element...
+const onLoadCSS = (() => {
+  // `main.css` is inserted by `style-loader` on development, so this is not needed.
+  if (__DEV__) {
+    return () => Promise.resolve();
+  }
+
+  const script = document.currentScript;
+  const css = document.createElement('link');
+  const cssURL = script.src.replace(/\.js$/, '.css');
+  css.rel = 'stylesheet';
+  const promise = new Promise((resolve, reject) => {
+    css.onload = resolve;
+    css.onerror = () => {
+      const err = new Error(`Loading 'main.css' failed. (${cssURL})`);
+      reject(err);
+    };
+  });
+  css.href = cssURL;
+  document.head.appendChild(css);
+
+  return () => promise;
+})();
 
 document.addEventListener('DOMContentLoaded', async () => {
   const noscript = document.querySelector('noscript');
@@ -52,9 +76,12 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Convert Markdown into HTML.
   const result = await compiler.process(content);
 
+  // Wait after loading `main.css`.
+  await onLoadCSS();
+
   // Show banner.
   console.log(
-    '%c 📝 %cmd.html%cMarkdown inside HTML\nhttps://github.com/MakeNowJust/md.html/',
+    '%c 📝 %cmd.html%cMarkdown inside HTML https://github.com/MakeNowJust/md.html/',
     'padding: 0.5em; background: green;',
     'padding: 0.5em; color: white; background: black;',
     'padding: 0.5em;',
