@@ -33,7 +33,6 @@ module.exports = (env = {}) => {
                     },
                   ],
                 ],
-                plugins: ['@babel/plugin-syntax-dynamic-import'],
               },
             },
           ],
