@@ -1,5 +1,7 @@
 # maidfile
 
+NOTE: `yarn XXX` command invokes the below task, and additional `yarn format` is shortcut to `yarn lint --fix`.
+
 ## dev
 
 Start development server.
@@ -31,7 +33,18 @@ title: md.html
 
 HTML
   sed -Ee '1s/src="[^"]*"/src="main.js"/' \
-       -e 's/^.*<!-- MARKER -->$/:sunglasses: **"[View Page Source][raw]" please!! You will see suprising result.**/' > docs/index.html
+       -e 's/^.*<!-- MARKER 1 -->$/:sunglasses: **"[View Page Source][raw]" please!! You will see suprising result.**/' \
+       -e 's/^.*<!-- MARKER 2 -->$/See [`maidfile.md`](maidfile.md.html) tasks./' > docs/index.html
+
+# Copy `maidfile.md`.
+cat - maidfile.md <<HTML > docs/maidfile.md.html
+<!doctype html><meta charset="utf-8"><script src="./main.js"></script><noscript>
+<!-- vim: set ft=markdown: -->
+---
+title: maidfile.md - md.html
+---
+
+HTML
 
 # Build `docs/examples`.
 (cd examples && find . -type f) | while read filename; do

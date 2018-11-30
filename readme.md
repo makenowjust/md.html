@@ -13,7 +13,25 @@ Put the following two magical lines into top of HTML file, then you can write Ma
 # Hello `md.html` World!
 ```
 
-See [md.html demo](https://makenowjust.github.io/md.html/)!<!-- MARKER -->
+See [md.html demo](https://makenowjust.github.io/md.html/)!<!-- MARKER 1 -->
+
+## Usage
+
+Put the following two magical lines into top of HTML file.
+
+Stable:
+
+```markdown
+<!doctype html><meta charset="utf-8"><script src="https://unpkg.com/@makenowjust/md.html@0.2.1"></script><noscript>
+<!-- vim: set ft=markdown: -->
+```
+
+HEAD:
+
+```markdown
+<!doctype html><meta charset="utf-8"><script src="https://makenowjust.github.io/md.html/main.js"></script><noscript>
+<!-- vim: set ft=markdown: -->
+```
 
 ## Features
 
@@ -28,6 +46,10 @@ See [md.html demo](https://makenowjust.github.io/md.html/)!<!-- MARKER -->
 - Set title via frontmatter `title` property.
 
 **See [examples](examples/)**!
+
+## Development
+
+See [`maidfile.md`](./maidfile.md) tasks.<!-- MARKER 2 -->
 
 ## Special Thanks
 
