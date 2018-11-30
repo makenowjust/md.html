@@ -18,6 +18,7 @@ See [md.html demo](https://makenowjust.github.io/md.html/)!<!-- MARKER -->
 ## Features
 
 - Don't need preprocess for publishing Markdown.
+- Support footnote reference.
 - Render soft breaks as `<br>`.
 - Emoji support (e.g. convert `:memo:` to 📝)
 - Set `target="_blank"` property to external links.
