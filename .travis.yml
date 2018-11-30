@@ -8,15 +8,23 @@ script:
 
 before_deploy:
   - yarn build
-
 deploy:
-  provider: pages
-  skip-cleanup: true
-  keep-history: true
-  target-branch: gh-pages
-  github-token: $GITHUB_TOKEN
-  local-dir: docs
-  name: TSUYUSATO Kitsune (bot)
-  email: make.just.on@gmail.com
-  on:
-    branch: master
+  - provider: pages
+    skip-cleanup: true
+    keep-history: true
+    target-branch: gh-pages
+    github-token:
+      secure: pXBvhD24wAM1UrL2QCLmGfxjYeg2hharJWgn9qWhuZ0f/oHE1pWZolNqsb97KZIcXq61JMXkUHYcIRCCg5CXj1mMBc2WcnnjPrYM57KGCt4sE3b7NDXuvo4XWbpPcmQpVQiiYiRlGPqOJkOTEPW2/dqF9ZjWmzokfQfypf109nBk/L0ePSeHCLOMZddlLPylWrgvtbT10JXe4I8d0cwy4Cv1l/y/fyRIp2jJSEQM7dSqz8FSaltUl6NuRph5gaBYxo51Qjl8hgovmfyZ53eJCFpaImWlwuDckRf8Ndj3E7gr8HRYbg4Nkfaz12J5dolMoID3lhP8E61j0gVBB5S5iaBHBFYRecvqHs4tjROLA5PVMn8LnlG+p6lG+15CH5GsZm/1rH1iVc7LjO1WZyWRMT6RFuofnsnQjTF2Pv9ZmDymNcGbDTVj4ER2xAR655hgEasjPyrMKEfqoXl/Fh0CU8+4d7zlrXNjGVTNfgUHi4XfJNuIAI5VR5OIdqU+n1iqkHJX9hcqcfTJisCH65X91YwVXCkraG3PhD9veTvknz/SkVZhnTseq5h8dap8Ke9WLKWRNaeKOh0Gh2pHn+pP1hAlrm+nteE9atQ7rZaDIAtaxcrVV2jl98P6Pe0ZUqxBKHuFaiE0ClT2pEDhzIB30Aob2IUhXNAb8Q2Dg3tlXbw=
+    local-dir: docs
+    name: TSUYUSATO Kitsune (bot)
+    email: make.just.on@gmail.com
+    on:
+      branch: master
+  - provider: npm
+    email: make.just.on@gmail.com
+    skip_cleanup: true
+    api_key:
+      secure: EPTebYuKDZSVrjOgEF/vccu82OvW/snCS9ghALJQciwD2FNJgPQ4YrQHwPF6PTIeLAsYSOp4j2tYxG+G8/1No54sqHI2bU6SpS96JaSCaHH7Ah6Rk0Ul2Rujs+t+eqCZH0sX+h2NARivcDMTJtviJQNe+7ceOPLjnF7j6RCEi98l8ufyetP6qi51Oal+GXGyL48kgQNvys+XjccjhinNKZbNrDkqoOHxd7jhhUrCqhs1ASDzJX02WI+oH9t3o8eKs75Vfcg78YMizoambQElF7FnNP8jaraoDy3N9CwJQf7sOxwGRyS5VPydFTF51SX0qs9CY7p4YL7kyJ3iGmy8uhnQz7XVFjg+APjVJexWIkkZMQfcEh13PAGvMQ6Q1m4kFPFQKE0XlW+mlp2GGa5+fEh9SOICx8t38L2yj3cxzJO5zxyjU2qd4os1WUJC8QmuFkUdZiIEWSQWJIxwifzB/OvLcYStd5wC6Jb+dtuFeMyTYnCjA0aEd1rqWy3Qs0XWIZkoMmPPC0UqxjigM9PBKfMfY0tylzUasWZsmKio/SK3VZ8L6HM23pdhS1bVMIiJ9AqIDiuB4YyE2u0ox7ZgKrtRnxYq4kLet1OnbmyMftC/3hTbQGX1KJh7M00QqOe8iTgYNJed4N/PETdjyWDasSMgd5it2hN2TvuvAKgC4tI=
+    on:
+      tags: true
+      repo: MakeNowJust/md.html
