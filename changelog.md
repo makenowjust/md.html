@@ -1,5 +1,9 @@
 # changelog
 
+## 0.2.1 (2018-11-30)
+
+- Fix `cssURL is not defined` bug.
+
 ## 0.2.0 (2018-11-30)
 
 - Support footnote reference.
