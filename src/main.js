@@ -22,6 +22,7 @@ import './main.css';
 
 // Build Markdown-to-HTML compiler.
 const compiler = unified()
+  .data('settings', {footnotes: true})
   .use(markdown)
   .use(breaks)
   .use(math)

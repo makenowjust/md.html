@@ -25,3 +25,12 @@ body {
 .md-html-footer {
   text-align: right;
 }
+
+.footnote-backref {
+  display: block;
+  text-align: right;
+}
+
+:target {
+  background-color: yellow;
+}
