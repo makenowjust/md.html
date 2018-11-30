@@ -42,7 +42,7 @@ HTML
        -e 's/^.*<!-- MARKER 1 -->$/:sunglasses: **"[View Page Source][raw]" please!! You will see suprising result.**/' \
        -e 's/^.*<!-- MARKER 2 -->$/See [`maidfile.md`](maidfile.md.html) tasks./' > docs/index.html
 
-# Copy `maidfile.md`.
+# Build `docs/maidfile.md.html`.
 cat - maidfile.md <<HTML > docs/maidfile.md.html
 <!doctype html><meta charset="utf-8"><script src="./main.js"></script><noscript>
 <!-- vim: set ft=markdown: -->
