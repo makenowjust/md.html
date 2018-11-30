@@ -7,7 +7,7 @@
 Put the following two magical lines into top of HTML file, then you can write Markdown after this and browser renders Markdown automatically.
 
 ```markdown
-<!doctype html><meta charset="utf-8"><script src="https://unpkg.com/@makenowjust/md.html/dist/main.js"></script><noscript>
+<!doctype html><meta charset="utf-8"><script src="https://unpkg.com/@makenowjust/md.html@0.1.0/dist/main.js"></script><noscript>
 <!-- vim: set ft=markdown: -->
 
 # Hello `md.html` World!
@@ -17,7 +17,7 @@ See [md.html demo](https://makenowjust.github.io/md.html/)!<!-- MARKER -->
 
 ## Features
 
-- Don't need preprocessing for rendering Markdown.
+- Don't need preprocess for publishing Markdown.
 - Render soft breaks as `<br>`.
 - Emoji support (e.g. convert `:memo:` to 📝)
 - Set `target="_blank"` property to external links.
