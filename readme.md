@@ -2,6 +2,8 @@
 
 > Markdown inside HTML
 
+[![Build Status][travis-badge]][travis]
+
 Put the following two magical lines into top of HTML file, then you can write Markdown after this and browser renders Markdown automatically.
 
 ```markdown
@@ -49,6 +51,8 @@ MIT (c) 2018 TSUYUSATO "[MakeNowJust][]" Kitsune
 
 <!-- Definitions -->
 
+[travis-badge]: https://img.shields.io/travis/MakeNowJust/md.html/master.svg?style=for-the-badge&logo=travis&colorA=8B6858
+[travis]: https://travis-ci.org/MakeNowJust/md.html
 [katex]: https://katex.org/
 [remark]: https://remark.js.org/
 [unified]: https://unified.js.org/
