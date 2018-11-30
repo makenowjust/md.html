@@ -21,14 +21,14 @@ Put the following two magical lines into top of HTML file.
 
 Stable:
 
-```html
+```markdown
 <!doctype html><meta charset="utf-8"><script src="https://unpkg.com/@makenowjust/md.html@0.2.1"></script><noscript>
 <!-- vim: set ft=markdown: -->
 ```
 
 HEAD:
 
-```html
+```markdown
 <!doctype html><meta charset="utf-8"><script src="https://makenowjust.github.io/md.html/main.js"></script><noscript>
 <!-- vim: set ft=markdown: -->
 ```
