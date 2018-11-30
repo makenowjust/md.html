@@ -13,7 +13,7 @@ module.exports = (env = {}) => {
       main: path.join(__dirname, 'src/main.js'),
     },
     output: {
-      path: path.join(__dirname, 'docs'),
+      path: path.join(__dirname, 'dist'),
       filename: '[name].js',
     },
     module: {

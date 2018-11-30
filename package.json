@@ -6,6 +6,10 @@
   "repository": "https://github.com/MakeNowJust/md.html",
   "version": "1.0.0",
   "main": "index.js",
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
     "analyze": "maid analyze",
     "build": "maid build",
@@ -15,7 +19,6 @@
     "test": "maid test"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.0.0",
     "github-markdown-css": "^2.10.0",
     "gray-matter": "^4.0.1",
     "highlight.js": "^9.13.1",
@@ -35,6 +38,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.1.6",
+    "@babel/polyfill": "^7.0.0",
     "@babel/preset-env": "^7.1.6",
     "babel-loader": "^8.0.4",
     "css-loader": "^1.0.1",

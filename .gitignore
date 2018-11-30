@@ -2,5 +2,6 @@
 node_modules/
 *.log
 
-# Webpack
+# Others
+/dist/
 /docs/

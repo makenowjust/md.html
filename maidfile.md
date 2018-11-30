@@ -17,6 +17,10 @@ Build project.
 set -ex
 webpack --config webpack.config.js --env.production
 
+# Copy built files to `docs`.
+mkdir -p docs
+cp -rT dist docs
+
 # Build `docs/index.html`.
 cat - readme.md <<HTML |
 <!doctype html><meta charset="utf-8"><script src="./main.js"></script><noscript>
