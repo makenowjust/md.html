@@ -48,10 +48,10 @@ const onLoadCSS = (() => {
   const scriptSrc = script.src;
   const css = document.createElement('link');
   // This considers two cases of `script.src`.
-  css.href = scriptSrc.endsWith('.js')
+  const cssURL = scriptSrc.endsWith('.js')
     ? //   1. `https://makenowjust.github.com/md.html/main.js`
       scriptSrc.replace(/\.js$/, '.css')
-    : //   2. `https://unpkg.com/@makenowjust/md.html@0.2.0`
+    : //   2. `https://unpkg.com/@makenowjust/md.html@0.2.1`
       scriptSrc + '/dist/main.css';
   css.rel = 'stylesheet';
   const promise = new Promise((resolve, reject) => {
