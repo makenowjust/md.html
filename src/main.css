@@ -34,3 +34,7 @@ body {
 :target {
   background-color: yellow;
 }
+
+.math {
+  overflow-x: auto;
+}

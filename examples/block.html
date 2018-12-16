@@ -41,6 +41,13 @@ e = &\ e_1 \cdot e_2 & (\text{concatination}) \\
 \end{aligned}
 $$
 
+$$
+f(x_1, \cdots, x_d)
+= \sum_{n_1 = 0}^{\infty} \cdots \sum_{n_d = 0}^{\infty} \frac{(x_1 - a)^{n_1} \cdots (x_d - a_d)^{n_d}}{n_1! \cdots n_d!} \left(\frac{\partial^{n_1 + \cdots + n_d} f}{\partial x_1^{n_1} \cdots \partial x_d^{n_d}} \right) (a_1, \cdots, a_d)
+\iff
+f(\mathbf{x}) = \sum_{\alpha \in \natnums_0^d} \frac{(\mathbf{x} - \mathbf{a})^\alpha}{\alpha!} (\partial^\alpha f) (\mathbf{a})
+$$
+
 ---
 
 ## h2
