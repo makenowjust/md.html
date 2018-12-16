@@ -4,7 +4,7 @@
   "license": "MIT",
   "author": "TSUYUSATO Kitsune <make.just.on@gmail.com>",
   "repository": "https://github.com/MakeNowJust/md.html",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "main": "dist/main.js",
   "files": [
     "dist",
