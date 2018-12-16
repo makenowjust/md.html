@@ -6,10 +6,6 @@ script:
   - yarn test
   - yarn lint
 
-env:
-  global:
-    - secure: iDBOC0kTAvMdAF5/rHxW926P5UAhAKkSZPADjN4v0tfM00dYb/GCxvPbi7tvFKVkoQhKhuvc1Yceh++icjGWInBliQWRBRt2+0PqEzymsGoU/wie2o6hFc8n9l1Ayooiiv8KLBfu6pT5I0hLsA5cC+lcrwLSztiiGdZcM32NFx9c8wecMeWDcZjBAf+IpUwlHlUyRqsDsz46sV/DyU0LUnlyte0EDBEwcinAQyZod+OHzPAAL3tK7/5rxzgVBrqoxjKt4hGWfNvlLupXpiLDqJJ+Y0WKekgOUPi3g72Y6MWN1OVE0GbMB5G0BHRJRRYoWf9D4Q9YrGff4Nkd5ezRJ84zfdtHgdtLqudt/TpaFMc6d1nsDWT2Xp924eUxSfAaPJIVODvLSEvdfJ7DTeCaNPL/sACbcdHcOI6jaDRPiV5f9IILVdvE0tVDdO7XzwRubSo+Thm8WMUHRFSx1D6xfjBXc4U6fsaXTXu9eEyKZK3wgzk0X89T3D0GcHmBnBXHfekMLEb3eses1x05Q/jaeI45vspesozzoYSTR5p8dEIej64v4nD7M30js6uhSjgWIChm2f942fwhmREqRVZz/ODAb5apZ2qgimFNax9UJrmAAVMVUo6rSjsvg7OzPtKptTaaqRs2W6Cw0RFt6A2iaU8QYIgYyD/mLYC+Tt88bwo=
-
 before_deploy:
   - yarn build
 deploy:
