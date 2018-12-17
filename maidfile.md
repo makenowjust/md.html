@@ -60,8 +60,8 @@ Ananlyze bundled JavaScript.
 ```bash
 set -ex
 mkdir -p docs
-webpack --config webpack.config.js --env.production --profile --json > docs/stats.json
-webpack-bundle-analyzer docs/stats.json
+webpack --config webpack.config.js --env.production --profile --json > dist/stats.json
+webpack-bundle-analyzer dist/stats.json
 ```
 
 ## test
