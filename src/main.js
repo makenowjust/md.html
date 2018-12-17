@@ -35,38 +35,6 @@ const compiler = unified()
   .use(katex)
   .use(html);
 
-// Load `main.css` manually.
-// On production environment, `main.css` is extracted by `mini-css-extract-plugin`,
-// however this plugin doesn't insert DOM element...
-const onLoadCSS = (() => {
-  // `main.css` is inserted by `style-loader` on development, so this is not needed.
-  if (__DEV__) {
-    return () => Promise.resolve();
-  }
-
-  const script = document.currentScript;
-  const scriptSrc = script.src;
-  const css = document.createElement('link');
-  // This considers two cases of `script.src`.
-  const cssURL = scriptSrc.endsWith('.js')
-    ? // 1. `https://makenowjust.github.com/md.html/main.js`
-      scriptSrc.replace(/\.js$/, '.css')
-    : // 2. `https://unpkg.com/@makenowjust/md.html@0.2.1`
-      scriptSrc + '/dist/main.css';
-  css.rel = 'stylesheet';
-  const promise = new Promise((resolve, reject) => {
-    css.onload = resolve;
-    css.onerror = () => {
-      const err = new Error(`Loading 'main.css' failed. (${cssURL})`);
-      reject(err);
-    };
-  });
-  css.href = cssURL;
-  document.head.appendChild(css);
-
-  return () => promise;
-})();
-
 document.addEventListener('DOMContentLoaded', async () => {
   const noscript = document.querySelector('noscript');
   if (!noscript) {
@@ -82,9 +50,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   const {data, content} = matter(text);
   // Convert Markdown into HTML.
   const result = await compiler.process(content);
-
-  // Wait after loading `main.css`.
-  await onLoadCSS();
 
   // Show banner.
   console.log(
