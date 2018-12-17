@@ -33,6 +33,16 @@ HEAD:
 <!-- vim: set ft=markdown: -->
 ```
 
+Or, you can get `main.js` from Web and specify this path:
+
+```console
+$ curl 'https://makenowjust.github.io/md.html/main.js > docs/main.js
+$ cat > docs/index.html
+<!doctype html><meta charset="utf-8"><script src="./main.js"></script><noscript>
+<!-- vim: set ft=markdown: -->
+^D
+```
+
 ## Features
 
 - Don't need preprocess for publishing Markdown.
