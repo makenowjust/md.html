@@ -21,20 +21,20 @@ exports[`Render block.html 1`] = `
 <li>list</li>
 <li>block</li>
 </ol>
-<table>
-<thead>
-<tr>
-<th>table</th>
-<th>block</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>row</td>
-<td>row</td>
-</tr>
-</tbody>
-</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>table</th><th>block</th></tr></thead><tbody><tr><td>row</td><td>row</td></tr></tbody></table>
 <div class=\\"math\\"><span class=\\"katex-display\\"><span class=\\"katex\\"><span class=\\"katex-mathml\\"><math><semantics><mtable><mtr><mtd><mstyle scriptlevel=\\"0\\" displaystyle=\\"true\\"><mrow><mi>e</mi><mo>=</mo></mrow></mstyle></mtd><mtd><mstyle scriptlevel=\\"0\\" displaystyle=\\"true\\"><mrow><mrow></mrow><mtext>&nbsp;</mtext><msub><mi>e</mi><mn>1</mn></msub><mo>⋅</mo><msub><mi>e</mi><mn>2</mn></msub></mrow></mstyle></mtd><mtd><mstyle scriptlevel=\\"0\\" displaystyle=\\"true\\"><mrow><mo>(</mo><mtext>concatination</mtext><mo>)</mo></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel=\\"0\\" displaystyle=\\"true\\"><mi mathvariant=\\"normal\\">∣</mi></mstyle></mtd><mtd><mstyle scriptlevel=\\"0\\" displaystyle=\\"true\\"><mrow><mrow></mrow><mtext>&nbsp;</mtext><msub><mi>e</mi><mn>1</mn></msub><mo>∨</mo><msub><mi>e</mi><mn>2</mn></msub></mrow></mstyle></mtd><mtd><mstyle scriptlevel=\\"0\\" displaystyle=\\"true\\"><mrow><mo>(</mo><mtext>alternation</mtext><mo>)</mo></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel=\\"0\\" displaystyle=\\"true\\"><mi mathvariant=\\"normal\\">∣</mi></mstyle></mtd><mtd><mstyle scriptlevel=\\"0\\" displaystyle=\\"true\\"><mrow><mrow></mrow><mtext>&nbsp;</mtext><msup><mi>e</mi><mo>∗</mo></msup></mrow></mstyle></mtd><mtd><mstyle scriptlevel=\\"0\\" displaystyle=\\"true\\"><mrow><mo>(</mo><mtext>repeatation</mtext><mo>)</mo></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel=\\"0\\" displaystyle=\\"true\\"><mi mathvariant=\\"normal\\">∣</mi></mstyle></mtd><mtd><mstyle scriptlevel=\\"0\\" displaystyle=\\"true\\"><mrow><mrow></mrow><mtext>&nbsp;</mtext><mi>c</mi></mrow></mstyle></mtd><mtd><mstyle scriptlevel=\\"0\\" displaystyle=\\"true\\"><mrow><mo>(</mo><mtext>character</mtext><mo>)</mo></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel=\\"0\\" displaystyle=\\"true\\"><mi mathvariant=\\"normal\\">∣</mi></mstyle></mtd><mtd><mstyle scriptlevel=\\"0\\" displaystyle=\\"true\\"><mrow><mrow></mrow><mtext>&nbsp;</mtext><mi>ϵ</mi></mrow></mstyle></mtd><mtd><mstyle scriptlevel=\\"0\\" displaystyle=\\"true\\"><mrow><mo>(</mo><mtext>empty&nbsp;string</mtext><mo>)</mo></mrow></mstyle></mtd></mtr></mtable><annotation encoding=\\"application/x-tex\\">\\\\begin{aligned}
 e = &amp;\\\\ e_1 \\\\cdot e_2 &amp; (\\\\text{concatination}) \\\\\\\\
   | &amp;\\\\ e_1 \\\\lor e_2  &amp; (\\\\text{alternation})   \\\\\\\\
@@ -79,7 +79,7 @@ exports[`Render index.html 1`] = `
 <li><a href=\\"footnote.html\\">footnote</a></li>
 </ul>
 <hr>
-<p>😎 \\"<a href=\\"https://raw.githubusercontent.com/MakeNowJust/md.html/gh-pages/examples/index.html\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\">View Page Source</a>\\"</p><footer class=\\"md-html-footer\\">Powered by <a target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\" href=\\"https://github.com/MakeNowJust/md.html/\\">📝 md.html</a> <sup>v0.3.0-dev</sup></footer></div>"
+<p>😎 \\"<a href=\\"https://raw.githubusercontent.com/MakeNowJust/md.html/gh-pages/examples/index.html\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\">View Page Source</a>\\"</p><footer class=\\"md-html-footer\\">Powered by <a target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\" href=\\"https://github.com/MakeNowJust/md.html/\\">📝 md.html</a> <sup>v0.0.0-dev</sup></footer></div>"
 `;
 
 exports[`Render inline.html 1`] = `

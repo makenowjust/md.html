@@ -5,7 +5,7 @@ const webpack = require('webpack');
 const pkg = require('./package.json');
 
 module.exports = (env = {}) => {
-  const MD_HTML_VERSION = env.production ? pkg.version : `${pkg.version}-dev`;
+  const MD_HTML_VERSION = env.production ? pkg.version : '0.0.0-dev';
 
   return {
     mode: env.production ? 'production' : 'development',
