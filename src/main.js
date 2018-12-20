@@ -8,6 +8,7 @@ import math from 'remark-math';
 import externalLinks from 'remark-external-links';
 import emoji from 'remark-emoji';
 import remark2rehype from 'remark-rehype';
+import raw from 'rehype-raw';
 import slug from 'rehype-slug';
 import link from 'rehype-autolink-headings';
 import highlight from 'rehype-highlight';
@@ -28,7 +29,8 @@ const compiler = unified()
   .use(math)
   .use(externalLinks)
   .use(emoji)
-  .use(remark2rehype)
+  .use(remark2rehype, {allowDangerousHTML: true})
+  .use(raw)
   .use(slug)
   .use(link, {properties: {className: 'anchor', ariaHidden: true}, content: linkIcon})
   .use(highlight, {ignoreMissing: true, subset: false})
@@ -53,10 +55,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // Show banner.
   console.log(
-    '%c 📝 %cmd.html%cMarkdown inside HTML https://github.com/MakeNowJust/md.html/',
-    'padding: 0.5em; background: green;',
-    'padding: 0.5em; color: white; background: black;',
-    'padding: 0.5em;',
+    `%c 📝 %cmd.html %cv${MD_HTML_VERSION}%cMarkdown inside HTML https://github.com/MakeNowJust/md.html/`,
+    'padding: 0.5em; background: green',
+    'padding: 0.5em; padding-right: 0; color: white; background: black',
+    'padding: 0.5em; padding-left: 0; color: silver; background: black',
+    'padding: 0.5em',
   );
 
   // Insert `<meta name="viewport">` for mobile devies into the document head.
@@ -74,7 +77,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (data.footer === undefined || data.footer === true) {
     const footer = document.createElement('footer');
     footer.classList.add('md-html-footer');
-    footer.innerHTML = `Powered by <a target="_blank" rel="nofollow noopener noreferrer" href="https://github.com/MakeNowJust/md.html/">📝 md.html</a>`;
+    footer.innerHTML = `Powered by <a target="_blank" rel="nofollow noopener noreferrer" href="https://github.com/MakeNowJust/md.html/">📝 md.html</a> <sup>v${MD_HTML_VERSION}</sup>`;
     container.appendChild(footer);
   }
 

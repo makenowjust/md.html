@@ -1,6 +1,12 @@
 const path = require('path');
 
+const webpack = require('webpack');
+
+const pkg = require('./package.json');
+
 module.exports = (env = {}) => {
+  const MD_HTML_VERSION = env.production ? pkg.version : `${pkg.version}-dev`;
+
   return {
     mode: env.production ? 'production' : 'development',
     devtool: env.production ? 'source-maps' : 'eval',
@@ -47,6 +53,14 @@ module.exports = (env = {}) => {
         },
       ],
     },
+    plugins: [
+      new webpack.BannerPlugin({
+        banner: `md.html v${MD_HTML_VERSION}`,
+      }),
+      new webpack.DefinePlugin({
+        MD_HTML_VERSION: JSON.stringify(MD_HTML_VERSION),
+      }),
+    ],
     resolve: {
       alias: {
         lowlight$: path.join(__dirname, 'src/lowlight.js'),

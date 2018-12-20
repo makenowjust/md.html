@@ -79,7 +79,7 @@ exports[`Render index.html 1`] = `
 <li><a href=\\"footnote.html\\">footnote</a></li>
 </ul>
 <hr>
-<p>😎 \\"<a href=\\"https://raw.githubusercontent.com/MakeNowJust/md.html/gh-pages/examples/index.html\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\">View Page Source</a>\\"</p><footer class=\\"md-html-footer\\">Powered by <a target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\" href=\\"https://github.com/MakeNowJust/md.html/\\">📝 md.html</a></footer></div>"
+<p>😎 \\"<a href=\\"https://raw.githubusercontent.com/MakeNowJust/md.html/gh-pages/examples/index.html\\" target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\">View Page Source</a>\\"</p><footer class=\\"md-html-footer\\">Powered by <a target=\\"_blank\\" rel=\\"nofollow noopener noreferrer\\" href=\\"https://github.com/MakeNowJust/md.html/\\">📝 md.html</a> <sup>v0.3.0-dev</sup></footer></div>"
 `;
 
 exports[`Render inline.html 1`] = `

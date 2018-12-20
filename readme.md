@@ -1,4 +1,4 @@
-# :memo: md.html
+# :memo: md.html <sup>v0.3.0</sup>
 
 > Markdown inside HTML
 
