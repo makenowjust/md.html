@@ -38,3 +38,11 @@ body {
 .math {
   overflow-x: auto;
 }
+
+@media print {
+  @page {
+    /* portrait A4 */
+    size: 210mm 297mm;
+    margin: 0;
+  }
+}
