@@ -1,5 +1,9 @@
 # changelog
 
+## dev
+
+- Hide footer on printing.
+
 ## 0.4.1 (2018-12-29)
 
 - Add styles for printing.
