@@ -1,6 +1,6 @@
 # changelog
 
-## dev
+## 0.4.2 (2018-12-29)
 
 - Hide footer on printing.
 

@@ -1,4 +1,4 @@
-# :memo: md.html <sup>v0.4.1</sup>
+# :memo: md.html <sup>v0.4.2</sup>
 
 > Markdown inside HTML
 
@@ -7,7 +7,7 @@
 Put the following two magical lines into top of HTML file, then you can write Markdown after this and browser renders Markdown automatically.
 
 ```markdown
-<!doctype html><meta charset="utf-8"><script src="https://unpkg.com/@makenowjust/md.html@0.4.1"></script><noscript>
+<!doctype html><meta charset="utf-8"><script src="https://unpkg.com/@makenowjust/md.html@0.4.2"></script><noscript>
 <!-- vim: set ft=markdown: -->
 
 # Hello `md.html` World!
@@ -22,7 +22,7 @@ Put the following two magical lines into top of HTML file.
 Stable:
 
 ```markdown
-<!doctype html><meta charset="utf-8"><script src="https://unpkg.com/@makenowjust/md.html@0.4.1"></script><noscript>
+<!doctype html><meta charset="utf-8"><script src="https://unpkg.com/@makenowjust/md.html@0.4.2"></script><noscript>
 <!-- vim: set ft=markdown: -->
 ```
 
