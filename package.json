@@ -41,8 +41,8 @@
     "@babel/polyfill": "^7.2.5",
     "@babel/preset-env": "^7.2.3",
     "babel-loader": "^8.0.4",
-    "css-loader": "^2.0.1",
-    "file-loader": "^2.0.0",
+    "css-loader": "^2.1.0",
+    "file-loader": "^3.0.1",
     "jest": "^23.6.0",
     "jest-puppeteer": "^3.7.0",
     "maid": "^0.3.0",
@@ -53,10 +53,10 @@
     "rehype-raw": "^4.0.0",
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2",
-    "webpack": "^4.28.0",
+    "webpack": "^4.28.2",
     "webpack-bundle-analyzer": "^3.0.3",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10"
+    "webpack-dev-server": "^3.1.14"
   },
   "publishConfig": {
     "access": "public"
