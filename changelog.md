@@ -1,5 +1,13 @@
 # changelog
 
+## 0.4.0 (2018-12-20)
+
+- Embed the current md.html version to `main.js`.
+
+## 0.3.0 (2018-12-17)
+
+- Bundle `main.js` as the single file.
+
 ## 0.2.1 (2018-11-30)
 
 - Fix `cssURL is not defined` bug.
@@ -11,4 +19,4 @@
 
 ## 0.1.0 (2018-11-30)
 
-- initial release
+- Initial release
