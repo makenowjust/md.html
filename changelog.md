@@ -1,5 +1,9 @@
 # changelog
 
+## dev
+
+- Add styles for printing.
+
 ## 0.4.0 (2018-12-20)
 
 - Embed the current md.html version to `main.js`.
