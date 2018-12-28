@@ -1,6 +1,6 @@
 # changelog
 
-## dev
+## 0.4.1 (2018-12-29)
 
 - Add styles for printing.
 
